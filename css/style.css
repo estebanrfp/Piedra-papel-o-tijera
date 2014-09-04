@@ -1,0 +1,73 @@
+body{
+	text-align: center;
+	background: #322;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+section{
+	padding: 1em;
+	z-index: 1;
+}
+section article{
+	display: inline-block;
+	width: 15em;
+	height: 15em;
+	border:5px solid white;
+	text-align: center;
+	position: relative;
+}
+section article h1{
+	color: white;
+	display:none;
+	font-size: 2em;
+	position: absolute;
+	left: 2.5em;
+	top: 2em;
+}
+
+section article:hover h1{
+	display: block;
+}
+section article:hover h1{
+	 background: black;
+}
+#footer{
+	background: rgb(120, 106, 45);
+	color: white;
+	text-align: center;
+	height: 20px;
+	padding: 1em;
+}
+h3 a{
+	text-decoration: none;
+}
+#Piedra,#Papel,#Tijeras{
+	background-image: url(../images/img.jpg);
+	background-size: 358%;
+	background-position-y: -32px;
+}
+
+#Piedra{
+background-position-x: -27px;
+}
+
+#Papel{
+background-position-x: -308px;
+}
+
+#Tijeras{
+background-position-x: -575px;}
+
+
+#efecto {
+    position: absolute;
+    float: left;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.1s;
+}
